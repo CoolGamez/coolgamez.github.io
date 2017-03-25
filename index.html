@@ -3,6 +3,14 @@
   <head>
     <title></title>
     <link rel = "stylesheet" href = "css/styles.css">
+    <script src = "https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#aboutNav').click(function() {
+      $.scrollTo($('#about'), 500);
+      });
+    })
+    </script>
   </head>
   <body>
 
@@ -11,12 +19,12 @@
         <center><h1>CoolGamez.tech</h1></center>
         <div class = "homeLinks">
           <a href = "#" class = "active">Home</a>
-          <a href = "about.html">About</a>
-          <a href = "games.html">Games</a>
+          <a href = "#" id = "aboutNav">About</a>
+          <a href = "#" id = "gamesNav">Games</a>
         </div>
       </div>
     </div>
-    <div class = "about">
+    <div class = "about" id = "about">
       <div class = "about-block">
         <div class = "imgBoxRight">
           <img src = "img/jason.jpg" class = "jason">
@@ -36,7 +44,7 @@
           </p>
         </div>
       </div>
-      <div class = "about-block">
+      <div class = "about-block-left">
         <div class = "description-left">
           <h2>Will Ganoe</h2>
           <p>
@@ -54,11 +62,25 @@
           <img src = "img/will.jpg" class = "jason">
         </div>
       </div>
-      .description-left h2 {
-        font-family: sans-serif;
-        text-decoration: underline;
-        text-align: right;
-      }
+      <div class = "about-block">
+        <div class = "imgBoxRight">
+          <img src = "img/gabe.jpg" class = "jason">
+        </div>
+        <div class = "description">
+          <h2>Gabe Towell</h2>
+          <p>
+            Jason is the developer
+            of the Tic-Tac-Toe game
+            made from LED lights on
+            an Arduino. He is a freshman
+            at Mt. Lebanon High School,
+            and will graduate in 2020.
+            He has been writing code for
+            3 years and knows many different
+            languages. He participates in Project Ignite.
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

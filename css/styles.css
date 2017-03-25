@@ -123,11 +123,17 @@ html, body {
 .about-block {
   margin: 10px 10px;
   display: flex;
-  justify-content: space-between;
+}
+
+.about-block-left {
+  margin: 10px 10px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .description {
   width: 775px;
+  margin-left: 15px;
 }
 
 .description h2 {
@@ -141,6 +147,7 @@ html, body {
 
 .description-left {
   width: 775px;
+  margin-right: 15px;
 }
 
 .description-left h2 {
