@@ -134,11 +134,13 @@ html, body {
 .about-block {
   margin: 10px 10px;
   display: flex;
+  align-items: center;
 }
 .about-block-left {
   margin: 10px 10px;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .description {
   width: 775px;
