@@ -51,10 +51,22 @@ html, body {
 }
 
 /*body*/
-.body {
+.games {
   width: 100%;
   height: 100%;
   background-image: url("../img/bodybg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/gamesbg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,55 +124,46 @@ html, body {
   -webkit-animation-duration: 20s;
   -webkit-animation-iteration-count: 999;
   padding: 10px 15px;
+  -webkit-transition-duration: 0.2s;
 }
 .bodyHeader .homeLinks a:hover {
   -webkit-animation-name: none;
   color: white;
-  background-color: black;
-  border: 1px white solid;
+  border: 2px white solid;
 }
-
 .about-block {
   margin: 10px 10px;
   display: flex;
 }
-
 .about-block-left {
   margin: 10px 10px;
   display: flex;
   justify-content: flex-end;
 }
-
 .description {
   width: 775px;
   margin-left: 15px;
 }
-
 .description h2 {
   font-family: sans-serif;
   text-decoration: underline;
 }
-
 .description p {
   font-family: sans-serif;
 }
-
 .description-left {
   width: 775px;
   margin-right: 15px;
 }
-
 .description-left h2 {
   font-family: sans-serif;
   text-decoration: underline;
   text-align: right;
 }
-
 .description-left p {
   font-family: sans-serif;
   text-align: right;
 }
-
 .imgBoxRight {
   width: 210px;
   height: 200px;
@@ -169,7 +172,6 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-
 .imgBoxLeft {
   width: 210px;
   height: 200px;
@@ -178,7 +180,6 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-
 .jason {
   width: 200px;
   height: 200px;
