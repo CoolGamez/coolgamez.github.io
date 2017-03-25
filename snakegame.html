@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Snake Game</title>
+  <style>
+  body{
+    background-color: blue;
+
+  }
+  .center-button {
+    width: 100%;
+    height: 50%;
+
+  }
+  </style>
+  <script>
+  function beginningFunction() { alert("The Snake Game -- Use the arrow keys to control the snake")
+  }
+var rect_x = 20;
+var rect_y = 20;
+
+
+  function rectangle(color) {
+
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+
+    ctx.beginPath();
+    ctx.lineWidth="10";
+    ctx.strokeStyle=color;
+    ctx.rect(rect_x, rect_y, 8, 8);
+    ctx.stroke();
+    ctx.closePath();
+
+  }
+
+
+
+
+  function controlled_moving(e){
+rectangle("blue");
+      e = e || window.event;
+
+      if (event.keyCode == '38') {
+          rect_y = rect_y - 30;
+
+      }
+      else if (event.keyCode == '40') {
+          rect_y = rect_y + 30;
+      }
+      else if (event.keyCode == '37') {
+          rect_x = rect_x - 30;
+      }
+      else if (event.keyCode == '39') {
+          rect_x = rect_x + 30;
+
+      }
+
+      rectangle("yellow");
+  }
+
+  </script>
+</head>
+<body onload= "beginningFunction()" onkeydown= "controlled_moving(event.key)">
+<center><button onclick="rectangle('yellow')">PLAY!</button></center>
+  <canvas id="myCanvas" width="300" height="150" style="border:1px solid #3345D1;">
+  <div class = "center-button">
+  </div>
+
+
+</body>
+</html>
