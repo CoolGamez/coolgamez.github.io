@@ -188,6 +188,21 @@ html, body {
   border-radius: 200px;
 }
 
+.games a {
+  text-decoration: none;
+  color: white;
+  background-color: #0cff00;
+  padding: 15px 20px;
+  font-size: 25px;
+  border-radius: 10px;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition-duration: 0.2s;
+}
+
+.games a:hover {
+  font-size: 30px;
+}
+
 @-webkit-keyframes allColorChanger {
   0%{color: red; border: 2px red solid;}
   17%{color: orange; border: 2px red solid;}
