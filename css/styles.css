@@ -9,10 +9,9 @@ html, body {
   z-index: 999;
   width: 100%;
   background-color: hotpink;
-  opacity: 0.8;
   display: flex;
   justify-content: center;
-  position: fixed;
+  position: relative;;
 }
 .nav .container {
   width: 90%;
@@ -60,6 +59,9 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .about {
   width: 100%;
@@ -70,4 +72,80 @@ html, body {
   background-size: cover;
   background-attachment: fixed;
   z-index: 100;
+}
+
+.bodyHeader {
+  display: block;
+  width: 80%;
+  height: 80%;
+}
+
+.bodyHeader h1 {
+  margin-top: 225px;
+  font-family: sans-serif;
+  color: white;
+  padding: 15px 10px;
+  width: 250px;
+  border: 2px white solid;
+  border-radius: 10px;
+  justify-content: center;
+  -webkit-animation-name: allColorChanger;
+  -webkit-animation-duration: 40s;
+  -webkit-animation-iteration-count: 999;
+  box-shadow: 0 16px 17px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bodyHeader .homeLinks {
+  position: relative;
+  top: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.bodyHeader .homeLinks a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.2s;
+  -webkit-animation-name: textColorChanger;
+  -webkit-animation-duration: 25s;
+  -webkit-animation-iteration-count: 999;
+  box-shadow: 0 16px 17px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bodyHeader .homeLinks a.active {
+  -webkit-animation-name: allColorChanger;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: 999;
+  padding: 10px 15px;
+}
+
+.bodyHeader .homeLinks a:hover {
+  -webkit-animation-name: none;
+  color: white;
+  background-color: black;
+  border: 1px white solid;
+}
+
+@-webkit-keyframes allColorChanger {
+  0%{color: red; border: 2px red solid;}
+  17%{color: orange; border: 2px red solid;}
+  34%{color: yellow; border: 2px orange solid;}
+  50%{color:green; border: 2px yellow solid;}
+  67%{color: blue; border: 2px green solid;}
+  84%{color: indigo; border: 2px blue solid;}
+  100%{color:red; border: 2px indigo solid;}
+}
+
+@-webkit-keyframes textColorChanger {
+  0%{color: red;}
+  17%{color: orange;}
+  34%{color: yellow;}
+  50%{color:green;}
+  67%{color: blue;}
+  84%{color: indigo;}
+  100%{color:red;}
 }
